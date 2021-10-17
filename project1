@@ -1,0 +1,21 @@
+CREATE TABLE store_list (id INTEGER, item TEXT, brand TEXT, price NUMERIC, stock_qty NUMERIC);
+
+INSERT into store_list VALUES (1, "Pijama", "Brand A", 20, 300);
+INSERT into store_list VALUES (2, "T-shirt", "Brand A", 10, 400);
+INSERT into store_list VALUES (3, "Pijama", "Brand B", 30, 300);
+INSERT into store_list VALUES (4, "T-shirt", "Brand B", 20, 400);
+INSERT into store_list VALUES (5, "Pijama", "Brand C", 40, 300);
+INSERT into store_list VALUES (6, "T-shirt", "Brand C", 30, 400);
+INSERT into store_list VALUES (7, "Trouser", "Brand A", 50, 300);
+INSERT into store_list VALUES (8, "Shoes", "Brand A", 40, 400);
+INSERT into store_list VALUES (9, "Trouser", "Brand B", 70, 300);
+INSERT into store_list VALUES (10, "Shoes", "Brand B", 60, 400);
+INSERT into store_list VALUES (11, "Trouser", "Brand C", 90, 300);
+INSERT into store_list VALUES (12, "Shoes", "Brand C", 80, 400);
+INSERT into store_list VALUES (13, "Earrings", "Brand A", 2, 100);
+INSERT into store_list VALUES (14, "Earrings", "Brand B", 4, 100);
+INSERT into store_list VALUES (15, "Earrings", "Brand C", 6, 100);
+
+SELECT * FROM store_list ORDER BY price;
+SELECT sum(stock_qty) FROM store_list;
+SELECT MAX(price) FROM store_list;
